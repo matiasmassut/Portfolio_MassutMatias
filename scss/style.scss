@@ -1,0 +1,652 @@
+@import "map";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.navbar-inverse {
+    background: #1E1E1E !important;
+    border-radius: 0px !important;
+    border: none !important;
+}
+
+li {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+main {
+
+    font-family: 'Syne', sans-serif;
+    color: #1E1E1E;
+    .welcome-contact {
+        font-family: 'Syne', sans-serif;
+        color: #1E1E1E;
+    }
+
+    h1 {
+        font-size: 48px;
+        font-weight: 800;
+        padding-bottom: 30px;
+    }
+
+    .outline {
+            color: white;
+            text-shadow:
+                3px 3px 0 #1e1e1e,
+              -1px -1px 0 #1e1e1e,  
+               1px -1px 0 #1e1e1e,
+               -1px 1px 0 #1e1e1e,
+                1px 1px 0 #1e1e1e;
+    }
+    
+    h2 {
+        font-size: 36px;
+        font-weight: 800;
+    }
+
+    h3 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    
+    h4 {
+        font-size: 24px;
+        font-weight: 800;
+    }
+    
+    h5 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    p {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    a {
+        font-size: 18px;
+        font-weight: 800;
+        color: #1E1E1E !important;
+        text-decoration: underline;
+    }
+}
+
+footer {
+    background: #1E1E1E;
+    height: 200px;
+    font-family: 'Syne', sans-serif;
+    
+    p {
+        color: #ffffff; 
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+/* Desktop-Device */
+@media (min-width: 900px) and (max-width: 1920px) {
+
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+        "header" "header"
+        "encabezado-services" "img-services"
+        "type-services" "type-services"
+        "contact-services" "contact-services"
+        "footer" "footer"
+        ;
+
+        .welcome-services {
+            img {
+                width: 50%;
+            }
+        }
+
+        .header-services {
+
+            display: flex;
+            background: #1E1E1E;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-right: 25px;
+            padding-left: 25px;
+            
+            nav {
+
+                width: 100%;
+
+                ul {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                }
+
+                li {
+
+                    padding: 15px;
+                    list-style-type: none;
+                    
+                    a {
+                        text-decoration: none;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+
+    header { grid-area: header;}
+    .encabezado-services { grid-area: encabezado-services;}
+    .img-services { grid-area: img-services;}
+    .type-services {grid-area: type-services;}
+    .contact-services { grid-area: contact-services;}
+    footer { grid-area: footer; }
+
+    .navbar-header {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .navbar-nav {
+        display: inline-block !important;
+        a {
+            color: #ffffff !important;
+
+            &:hover {
+                color: #A0ECFF !important;
+                font-size: 18px;
+                transition: 0.2s;
+            }
+        }
+    }
+
+    main {
+
+        .welcome-home {
+            padding: 150px 150px 200px 150px;
+
+            p {
+                padding-bottom: 25px;
+            }
+
+            h3 {
+                padding-bottom: 25px;
+            }
+
+            a {
+                font-size: 24px;
+                text-decoration: underline;
+            }
+
+        }
+
+        .welcome-about {
+            padding: 0px 150px 150px 150px;
+
+            img {
+                width: 100%;
+            }
+
+            p {
+                padding-top: 50px;
+            }
+        }
+
+        .about {
+            padding: 150px 150px 150px 150px;
+
+            img {
+                width: 100%;
+            }
+
+            p {
+                padding-top: 50px;
+            }
+        }
+
+        .welcome-latest {
+            padding: 0px 150px 150px 150px;
+
+            h2 {
+                padding-bottom: 50px;
+                
+            }
+
+            a {
+                text-align: center;
+                padding-top: 50px;
+                &:hover {
+                    font-size: 22px;
+                    transition: 0.2s;
+                }
+            }
+    
+
+            .card {
+                padding: 50px;
+                border: 4px solid #1E1E1E;
+                border-radius: 0px;
+                &:hover {
+                    background: #fffaa3;
+                    transition: 0.5s;
+                }
+                
+                h4 {
+                    padding-bottom: 300px;
+                }
+
+            }
+        }
+
+        .projects {
+            padding: 150px 150px 150px 150px;
+
+            h2 {
+                padding-bottom: 50px;
+                
+            }
+
+            a {
+                text-align: center;
+                padding-top: 50px;
+                &:hover {
+                    font-size: 22px;
+                    transition: 0.2s;
+                }
+            }
+    
+
+            .card {
+                padding: 50px;
+                border: 4px solid #1E1E1E;
+                border-radius: 0px;
+                margin-bottom: 50px;
+                
+                h4 {
+                    padding-bottom: 300px;
+                }
+
+            }
+            
+            .projects-1 {
+                &:hover {
+                    background: #A0ECFF;
+                    transition: 0.5s;
+                }
+            }
+
+            .projects-2 {
+                &:hover {
+                    background: #FFD28A;
+                    transition: 0.5s;
+                }
+            }
+
+            .projects-3 {
+                &:hover {
+                    background: #CEFE9D;
+                    transition: 0.5s;
+                }
+            }
+
+            .projects-4 {
+                &:hover {
+                    background: #FED7FA;
+                    transition: 0.5s;
+                }
+            }
+            
+        }
+
+        .welcome-process {
+            padding: 0px 150px 150px 150px;
+            
+
+            h2 {
+                padding-bottom: 15px;
+                
+            }
+
+            h4 {
+                padding-bottom: 50px;
+                
+            }
+
+            .process {
+                padding: 50px;
+                border: 4px solid #1E1E1E;
+                margin-top: 50px;
+            }
+
+        }
+
+        .work-experience {
+            padding: 0px 150px 150px 150px;
+            
+
+            h2 {
+                padding-bottom: 15px;
+                
+            }
+
+            h4 {
+                padding-bottom: 30px;
+                
+            }
+
+            h5 {
+                padding-bottom: 15px;
+                
+            }
+
+            .jobs {
+                padding: 50px;
+                border: 4px solid #1E1E1E;
+                margin-top: 50px;
+            }
+
+        }
+
+        .welcome-review {
+            padding: 0px 150px 150px 150px;
+            
+            h2 {
+                padding-bottom: 50px;
+            }
+
+            img{
+                padding-bottom: 30px;
+            }
+
+            .review {
+                padding: 50px;
+                border: 4px solid #1E1E1E;
+            }
+
+        }
+
+        .working {
+            padding: 200px 150px 200px 150px;
+        }
+
+        .welcome-contact {
+            padding-top: 150px;
+            padding-bottom: 150px;
+            padding-left: 150px;
+            padding-right: 150px;
+
+            h2 {
+                padding-bottom: 50px;
+                
+            }
+        }
+
+        .values {
+            padding: 0px 150px 150px 150px;
+
+            h2 {
+                padding-bottom: 50px;
+            }
+
+            h4 {
+                padding-bottom: 25px;
+            }
+
+            p{
+                padding-bottom: 50px;
+            }
+
+            hr {
+                border: 4px solid #1e1e1e;
+            }
+        }
+    }
+
+    footer {
+        display: grid;
+        padding: 50px;
+
+        p {
+            padding-top: 50px;
+        }
+    }
+}
+
+@media (max-width: 899px) {
+
+
+    .navbar-header {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .navbar-nav {
+        a {
+            color: #ffffff !important;
+            &:hover {
+                color: #A0ECFF !important;
+                transition: 0.2s;
+            }
+        }
+    }
+
+    main {
+        font-family: 'Syne', sans-serif;
+        color: #1E1E1E;
+        padding: 0px !important;
+    
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+        }
+        
+        h2 {
+            font-size: 24px;
+            font-weight: 800;
+            padding-bottom: 25px;
+        }
+        
+        h4 {
+            font-size: 22px;
+            font-weight: 800;
+        }
+        
+        h5 {
+            font-size: 16px;
+            font-weight: 400;
+        }
+        
+        p {
+            font-size: 18px;
+            font-weight: 400;
+        }
+    
+        a {
+            font-size: 18px;
+            font-weight: 800;
+            color: #1E1E1E !important;
+            text-decoration: underline;
+        }
+    }
+
+    .welcome-home {
+        padding: 100px 15px 100px 15px;
+       
+        h3 {
+            font-size: 18px;
+            font-weight: 700;
+            padding-bottom: 15px;
+        }
+        p {
+            font-size: 22px;
+            padding-bottom: 25px;
+        }
+        a {
+            font-size: 24px;
+            text-decoration: underline;
+        }
+    }
+
+    .welcome-about {
+
+        padding: 0px 15px 100px 15px;
+
+        .img-profile {
+            padding-top: 25px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .about {
+        padding: 100px 15px 100px 15px;
+        h2 {
+            text-align: center;
+        }
+
+        img {
+            margin-top: 30px;
+            width: 100%;
+        }
+    }
+
+    .values {
+        padding: 0px 15px 100px 15px;
+        h2 {
+            text-align: center;
+        }
+
+        hr {
+            display: none;
+        }
+
+        p {
+            padding-bottom: 30px;
+        }
+    }
+
+    .welcome-latest {
+        padding: 0px 15px 100px 15px;
+
+        .card {
+            padding: 10px;
+            border: 4px solid #1E1E1E ;
+            border-radius: 0px;
+            margin-top: 30px;
+
+            h4 {
+                padding-bottom: 200px;
+            }
+
+            h5 {
+                font-size: 18px;
+            }
+        }
+
+        a {
+            text-align: center;
+            padding-top: 30px;
+        }
+
+    }
+
+    .projects {
+        padding: 100px 15px 100px 15px;
+        justify-content: center;
+
+        h2 {
+            text-align: center;
+        }
+
+        .card {
+            padding: 10px;
+            border: 4px solid #1E1E1E ;
+            border-radius: 0px;
+            margin-bottom: 30px;
+
+            h4 {
+                padding-bottom: 200px;
+            }
+
+            h5 {
+                font-size: 18px;
+            }
+        }
+
+        a {
+            text-align: center;
+            padding-top: 30px;
+        }
+
+    }
+
+    .welcome-process {
+        padding: 0px 15px 100px 15px;
+        
+        h4 {
+            padding-bottom: 30px;
+            
+        }
+
+        .process {
+            padding: 30px;
+            border: 4px solid #1E1E1E;
+            margin-top: 30px;
+        }
+    }
+
+    .work-experience {
+        padding: 0px 15px 100px 15px;
+        h2 {
+            text-align: center;
+        }
+        
+        h4 {
+            padding-bottom: 30px;
+            
+        }
+        .jobs {
+            padding: 30px;
+            border: 4px solid #1E1E1E;
+            margin-bottom: 30px;
+        }
+    }
+
+
+    .welcome-review {
+        padding: 0px 15px 100px 15px;
+
+            img{
+                padding-bottom: 15px;
+                width: 15%;
+            }
+
+            .review {
+                padding: 30px;
+                border: 4px solid #1E1E1E;
+            }
+    }
+
+    .welcome-contact {
+        padding: 100px 15px 100px 15px;
+
+        p {
+            padding-bottom: 30px;
+        }
+    }
+
+    footer {
+        padding: 30px;
+
+        p {
+            padding-top: 30px;
+        }
+    }
+}
